@@ -21,7 +21,7 @@ def print_shifted_triangle(height, margin, symbol):
     rows = 1
     while rows <= height*2:
         for m in range(margin + height - 1):
-            final_margin += "_"
+            final_margin += " "
         for i in range(1,rows+1):
             final_str += symbol
         if(len(final_str)%2 != 0):
