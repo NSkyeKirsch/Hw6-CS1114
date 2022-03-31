@@ -55,6 +55,8 @@ def main():
     input_num_trees = int(input("Enter a positive, non-zero, integer: "))
     input_character = input("Enter a non-whitespace, non-alphanumeric character: ")
 
-    print_pine_tree(input_num_trees,input_character)
+    if input_num_trees >= 0 and not input_character.isalnum():
+        print_pine_tree(input_num_trees,input_character)
 
-main()
+if __name__ == "__main__":
+    main();
